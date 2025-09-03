@@ -16,6 +16,7 @@ exports.handler = async (event, context) => {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
         Accept: "application/json",
+        "X-PCO-API-Version": "2018-08-01",
         "User-Agent": "DiscoveryEventsApp (mike@dc2.me)"
       },
     });
