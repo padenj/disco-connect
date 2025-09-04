@@ -15,10 +15,10 @@ exports.handler = async (event, context) => {
     const basicAuth = Buffer.from(`${clientId}:${token}`).toString("base64");
     const response = await fetch("https://api.planningcenteronline.com/registrations/v2/events", {
       headers: {
-      Authorization: `Basic ${basicAuth}`,
-      "Content-Type": "application/json",
-      Accept: "application/json",
-      "User-Agent": "DiscoveryEventsApp (mike@dc2.me)"
+        Authorization: `Basic ${basicAuth}`,
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "User-Agent": "DiscoveryEventsApp (mike@dc2.me)"
       },
     });
 
